@@ -1,0 +1,212 @@
+@import url(../css/head.css);
+@import url(../css/banner.css);
+@import url(../css/services.css);
+@import url(../css/asked.css);
+
+/* media */
+@media screen and (max-width: 1199px) {
+  .banner {
+    background: url(../img/tab.png) no-repeat bottom/cover;
+    min-height: 918px;
+  }
+  .banner__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 918px;
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+  .banner__wrap h1 {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  .banner__wrap p span {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .banner__wrap h1 span:nth-child(1), .banner__wrap h1 span:nth-child(2) {
+    font-size: 58px;
+  }
+  .banner__wrap h1 span:nth-child(3) {
+    font-size: 60px;
+  }
+  .banner__wrap h2 {
+    margin-bottom: 20px;
+  }
+  .banner__wrap h2 span:nth-child(1), .banner__wrap h2 span:nth-child(2) {
+    font-size: 98px;
+  }
+  .banner__wrap h2 span:nth-child(3) {
+    font-size: 100px;
+  }
+  .banner__wrap h3 {
+    margin-bottom: 20px;
+  }
+  .banner__wrap h3 span:nth-child(1), .banner__wrap h3 span:nth-child(2) {
+    font-size: 110px;
+  }
+  .banner__wrap h3 span:nth-child(3) {
+    font-size: 112px;
+  }
+  .banner__wrap p {
+    font-size: 30px;
+  }
+  .banner__link {
+    margin-top: auto;
+  }
+  .services .container {
+    padding-top: 30px;
+    padding-bottom: 120px;
+  }
+  .services__box {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .services__wrap::after {
+    right: auto;
+    top: auto;
+    left: 50%;
+    bottom: -50px;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: translate(0, -50%) rotate(90deg);
+            transform: translate(0, -50%) rotate(90deg);
+  }
+  .services__block {
+    padding: 20px;
+  }
+  .asked .container {
+    padding-bottom: 120px;
+  }
+  .asked__bg {
+    display: none;
+  }
+  .asked__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .asked__title {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .asked__wrap {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+  .banner {
+    background: url(../img/mobile.png) no-repeat bottom/cover;
+    min-height: 573px;
+  }
+  .banner__wrap {
+    min-height: 573px;
+    padding-top: 20px;
+    padding-bottom: 36px;
+  }
+  .banner__wrap h1 {
+    height: 45px;
+    margin-bottom: 5px;
+  }
+  .banner__wrap h1 span:nth-child(1), .banner__wrap h1 span:nth-child(2) {
+    font-size: 37px;
+  }
+  .banner__wrap h1 span:nth-child(3) {
+    font-size: 38px;
+  }
+  .banner__wrap p span {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .banner__wrap h2 {
+    height: 60px;
+    margin-bottom: 5px;
+  }
+  .banner__wrap h2 span:nth-child(1), .banner__wrap h2 span:nth-child(2) {
+    font-size: 64px;
+  }
+  .banner__wrap h2 span:nth-child(3) {
+    font-size: 65px;
+  }
+  .banner__wrap h3 {
+    height: 77px;
+    margin-bottom: 10px;
+  }
+  .banner__wrap h3 span:nth-child(1), .banner__wrap h3 span:nth-child(2) {
+    font-size: 72px;
+  }
+  .banner__wrap h3 span:nth-child(3) {
+    font-size: 73px;
+  }
+  .banner__wrap p {
+    font-size: 20px;
+  }
+  .banner__link {
+    font-size: 26px;
+    padding: 16px 30px;
+  }
+  .services .container {
+    padding-top: 25px;
+    padding-bottom: 73px;
+  }
+  .services__box {
+    grid-gap: 32px;
+  }
+  .services__wrap {
+    min-height: auto;
+  }
+  .services__block {
+    padding: 15px 20px;
+  }
+  .services__icon {
+    max-width: 70px;
+    height: 60px;
+  }
+  .services__text {
+    width: calc(100% -90px);
+  }
+  .services__block h5 {
+    font-size: 18px;
+  }
+  .services__wrap::after {
+    width: 22px;
+    height: 18px;
+    bottom: -34px;
+  }
+  .asked .container {
+    padding-bottom: 73px;
+  }
+  .asked__title {
+    margin-bottom: 36px;
+  }
+  .asked__title h2 {
+    font-size: 28px;
+  }
+  .asked__accordion {
+    margin-bottom: 12px;
+  }
+  .asked__btn {
+    font-size: 18px;
+    padding: 20px 15px;
+  }
+  .asked__block {
+    padding: 0 15px 20px 15px;
+  }
+  .asked__block li {
+    font-size: 16px;
+  }
+}
